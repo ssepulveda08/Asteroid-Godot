@@ -1,0 +1,79 @@
+[gd_scene load_steps=14 format=3 uid="uid://ce18vyqkkcyhx"]
+
+[ext_resource type="Script" path="res://Shot01.gd" id="1_lkkpb"]
+[ext_resource type="Texture2D" uid="uid://bod0sug525xyx" path="res://art/Ship1_Explosion/Ship1_Explosion_008.png" id="2_chse6"]
+[ext_resource type="Texture2D" uid="uid://cvfvdjjq3ftx1" path="res://art/shot6_1.png" id="2_ky8cw"]
+[ext_resource type="Texture2D" uid="uid://hv645ajx745t" path="res://art/Ship1_Explosion/Ship1_Explosion_009.png" id="3_sjrwc"]
+[ext_resource type="Texture2D" uid="uid://cr1luuyn4h2ho" path="res://art/Ship1_Explosion/Ship1_Explosion_012.png" id="4_xe6gk"]
+[ext_resource type="Texture2D" uid="uid://b350amgeqdpb8" path="res://art/Ship1_Explosion/Ship1_Explosion_013.png" id="5_fgdw8"]
+[ext_resource type="Texture2D" uid="uid://dvqfwwcsku4ps" path="res://art/Ship1_Explosion/Ship1_Explosion_014.png" id="6_c8aov"]
+[ext_resource type="Texture2D" uid="uid://dni75mpus23oa" path="res://art/Ship1_Explosion/Ship1_Explosion_017.png" id="7_dosya"]
+[ext_resource type="Texture2D" uid="uid://ilkxcc7vgwdx" path="res://art/Ship1_Explosion/Ship1_Explosion_019.png" id="8_luk5c"]
+[ext_resource type="Texture2D" uid="uid://bfkaj1u78asj7" path="res://art/Ship1_Explosion/Ship1_Explosion_020.png" id="9_1lxjo"]
+[ext_resource type="AudioStream" uid="uid://c6v148fa8214" path="res://art/Music/atari_boom.wav" id="11_eijve"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ypcw3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_chse6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_sjrwc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xe6gk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_fgdw8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_c8aov")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dosya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_luk5c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_1lxjo")
+}],
+"loop": false,
+"name": &"exploit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ky8cw")
+}],
+"loop": false,
+"name": &"shot",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u6jer"]
+radius = 5.0
+height = 60.0
+
+[node name="Shot01" type="Area2D"]
+script = ExtResource("1_lkkpb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ypcw3")
+animation = &"exploit"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 29)
+shape = SubResource("CapsuleShape2D_u6jer")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+position = Vector2(-2, 8)
+
+[node name="BoomMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_eijve")
+volume_db = -15.563
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]

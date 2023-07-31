@@ -1,0 +1,98 @@
+[gd_scene load_steps=7 format=3 uid="uid://p4oqapg5blds"]
+
+[ext_resource type="Script" path="res://hud.gd" id="1_4bddp"]
+[ext_resource type="FontFile" uid="uid://mbkdv6bn66l" path="res://art/font/Game Space Academy.otf" id="1_s730q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2kv4h"]
+content_margin_left = 50.0
+content_margin_top = 200.0
+content_margin_right = 50.0
+content_margin_bottom = 50.0
+
+[sub_resource type="Theme" id="Theme_12dld"]
+default_font_size = 200
+/fonts/Title = ExtResource("1_s730q")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fxynt"]
+content_margin_left = 50.0
+content_margin_right = 50.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bl7ya"]
+content_margin_left = 100.0
+content_margin_top = 50.0
+content_margin_right = 100.0
+content_margin_bottom = 50.0
+
+[node name="HUD" type="CanvasLayer"]
+follow_viewport_enabled = true
+script = ExtResource("1_4bddp")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_2kv4h")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/PanelContainer2"]
+layout_mode = 2
+
+[node name="title" type="Label" parent="VBoxContainer/PanelContainer2/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_12dld")
+theme_override_fonts/font = ExtResource("1_s730q")
+text = "The black space"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="PanelContainer3" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_fxynt")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/PanelContainer3"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="VBoxContainer/PanelContainer3/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("1_s730q")
+theme_override_font_sizes/font_size = 60
+text = "Best points:"
+horizontal_alignment = 1
+metadata/_edit_group_ = true
+
+[node name="Points" type="Label" parent="VBoxContainer/PanelContainer3/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0.729412, 0, 1)
+theme_override_fonts/font = ExtResource("1_s730q")
+theme_override_font_sizes/font_size = 150
+text = "0"
+horizontal_alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_bl7ya")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer/PanelContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer/PanelContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0.862745, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.972549, 0.560784, 0.4, 1)
+theme_override_fonts/font = ExtResource("1_s730q")
+theme_override_font_sizes/font_size = 100
+text = "Start
+"
+icon_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/PanelContainer/VBoxContainer2/Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://j5mmxt3j7i1w"]
+
+[ext_resource type="Script" path="res://Score.gd" id="1_anokm"]
+[ext_resource type="FontFile" uid="uid://mbkdv6bn66l" path="res://art/font/Game Space Academy.otf" id="2_fhjqu"]
+
+[node name="Score" type="CanvasLayer"]
+script = ExtResource("1_anokm")
+
+[node name="LabelScore" type="Label" parent="."]
+layout_direction = 2
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -120.0
+offset_top = 27.0
+offset_right = -27.0
+offset_bottom = 76.0
+grow_horizontal = 0
+scale = Vector2(1.00151, 1)
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0.87451, 0, 1)
+theme_override_constants/shadow_offset_x = -16
+theme_override_constants/shadow_offset_y = 16
+theme_override_fonts/font = ExtResource("2_fhjqu")
+theme_override_font_sizes/font_size = 45
+text = "0 Ptos"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+justification_flags = 171

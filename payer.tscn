@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://cxa0dy4u2j15b"]
+
+[ext_resource type="Texture2D" uid="uid://cucedi05chggk" path="res://art/bgspeedship.png" id="1_bs2jk"]
+[ext_resource type="Script" path="res://payer.gd" id="1_xep5a"]
+[ext_resource type="AudioStream" uid="uid://nkq1n5nqbm6n" path="res://art/Music/GameOver.wav" id="3_5etcv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0eqtc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_bs2jk")
+}],
+"loop": true,
+"name": &"ship",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_egacc"]
+radius = 23.0
+height = 104.0
+
+[node name="Payer" type="Area2D"]
+script = ExtResource("1_xep5a")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, 2)
+sprite_frames = SubResource("SpriteFrames_0eqtc")
+animation = &"ship"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_egacc")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(4.57199e-08, 29)
+rotation = 1.53414
+shape = SubResource("CapsuleShape2D_egacc")
+metadata/_edit_lock_ = true
+
+[node name="GameOver" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_5etcv")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

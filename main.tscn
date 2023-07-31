@@ -1,0 +1,61 @@
+[gd_scene load_steps=9 format=3 uid="uid://dqpdpnccdppuy"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_82nvh"]
+[ext_resource type="PackedScene" uid="uid://ce18vyqkkcyhx" path="res://shot_01.tscn" id="2_msheg"]
+[ext_resource type="PackedScene" uid="uid://cxa0dy4u2j15b" path="res://payer.tscn" id="2_qgu3k"]
+[ext_resource type="PackedScene" uid="uid://bqubguxar2c2d" path="res://background.tscn" id="3_qxcmq"]
+[ext_resource type="PackedScene" uid="uid://p4oqapg5blds" path="res://hud.tscn" id="3_smoeq"]
+[ext_resource type="AudioStream" uid="uid://bsrwsgmfh8uel" path="res://art/Music/Logisector Intro.mp3" id="5_cnhr0"]
+[ext_resource type="PackedScene" uid="uid://j5mmxt3j7i1w" path="res://score.tscn" id="5_lp2ty"]
+
+[sub_resource type="Curve2D" id="Curve2D_oaky6"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 2, 309.373, 0, 0, 0, 0, 4, 6.02674, 0, 0, 0, 0, 719, 2.00891, 0, 0, 0, 0, 719.994, 618.745)
+}
+point_count = 4
+
+[node name="Main" type="Node"]
+script = ExtResource("1_82nvh")
+shot_scene = ExtResource("2_msheg")
+
+[node name="HUD" parent="." instance=ExtResource("3_smoeq")]
+
+[node name="Background" parent="." instance=ExtResource("3_qxcmq")]
+
+[node name="AsteroidTimer" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="ShotTimer" type="Timer" parent="."]
+
+[node name="StartTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Score" parent="." instance=ExtResource("5_lp2ty")]
+
+[node name="Payer" parent="." instance=ExtResource("2_qgu3k")]
+visible = false
+
+[node name="StartPosition" type="Marker2D" parent="."]
+visible = false
+
+[node name="Asteroid2D" type="Path2D" parent="."]
+visible = false
+position = Vector2(0.00555551, 0)
+scale = Vector2(0.997222, 0.995563)
+curve = SubResource("Curve2D_oaky6")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Asteroid2D"]
+position = Vector2(2, 309.373)
+rotation = -1.5642
+
+[node name="Music_bg" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_cnhr0")
+volume_db = -20.356
+max_polyphony = 2
+
+[connection signal="on_pressed_start" from="HUD" to="." method="_on_hud_on_pressed_start"]
+[connection signal="timeout" from="AsteroidTimer" to="." method="_on_asteroid_timer_timeout"]
+[connection signal="timeout" from="ShotTimer" to="." method="_on_shot_timer_timeout"]
+[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
+[connection signal="update_level" from="Score" to="." method="_on_score_update_level"]
+[connection signal="hit" from="Payer" to="." method="_on_payer_hit"]

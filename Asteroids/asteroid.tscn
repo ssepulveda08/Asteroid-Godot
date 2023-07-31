@@ -1,0 +1,329 @@
+[gd_scene load_steps=68 format=3 uid="uid://dwmshrmfyj81q"]
+
+[ext_resource type="Texture2D" uid="uid://c56ri72qrv3ud" path="res://art/asteroids/large/a10000.png" id="2_ech8t"]
+[ext_resource type="Texture2D" uid="uid://bij5n7mxq5ntb" path="res://art/asteroids/large/a10001.png" id="3_ka65m"]
+[ext_resource type="Texture2D" uid="uid://b2w1l1s2w533n" path="res://art/asteroids/large/a10002.png" id="4_xwipc"]
+[ext_resource type="Texture2D" uid="uid://dwml33gycm7wy" path="res://art/asteroids/large/a10003.png" id="5_d5668"]
+[ext_resource type="Texture2D" uid="uid://d05psx3g0q4d5" path="res://art/asteroids/large/a10004.png" id="6_4tuef"]
+[ext_resource type="Texture2D" uid="uid://bk7oxox4cq64b" path="res://art/asteroids/large/a10005.png" id="7_2dx4a"]
+[ext_resource type="Texture2D" uid="uid://cpo0q1f57416k" path="res://art/asteroids/large/a10006.png" id="8_785y3"]
+[ext_resource type="Texture2D" uid="uid://c0y7dqsnbesav" path="res://art/asteroids/large/a10007.png" id="9_y8pi7"]
+[ext_resource type="Texture2D" uid="uid://wevek6vv7g28" path="res://art/asteroids/large/a10008.png" id="10_4uu30"]
+[ext_resource type="Texture2D" uid="uid://dfo88wbrgo5yr" path="res://art/asteroids/large/a10009.png" id="11_lsqf2"]
+[ext_resource type="Texture2D" uid="uid://ejnma7wt46sb" path="res://art/asteroids/large/a10010.png" id="12_hlnvs"]
+[ext_resource type="Texture2D" uid="uid://bj1p0r4gj6wv0" path="res://art/asteroids/large/a10011.png" id="13_5t2ub"]
+[ext_resource type="Texture2D" uid="uid://dwm2p64v5dr4o" path="res://art/asteroids/large/a10012.png" id="14_o282k"]
+[ext_resource type="Texture2D" uid="uid://cgqs3kvlclu11" path="res://art/asteroids/large/a10013.png" id="15_kevyd"]
+[ext_resource type="Texture2D" uid="uid://ccl2k6g0g06h" path="res://art/asteroids/large/a10014.png" id="16_b73si"]
+[ext_resource type="Texture2D" uid="uid://beg4dwp15a0k1" path="res://art/asteroids/large/a10015.png" id="17_qsw0f"]
+[ext_resource type="Texture2D" uid="uid://ddmsd12u7kegd" path="res://art/asteroids/large/b10000.png" id="18_oxa6k"]
+[ext_resource type="Texture2D" uid="uid://chac6d5nw4irj" path="res://art/asteroids/large/b10001.png" id="19_p2cv1"]
+[ext_resource type="Texture2D" uid="uid://dsvrfnbf7urgj" path="res://art/asteroids/large/b10002.png" id="20_1w5gn"]
+[ext_resource type="Texture2D" uid="uid://crts56qoysdx1" path="res://art/asteroids/large/b10003.png" id="21_wvlee"]
+[ext_resource type="Texture2D" uid="uid://dtwv0etgqwyf5" path="res://art/asteroids/large/b10004.png" id="22_owub8"]
+[ext_resource type="Texture2D" uid="uid://cmlihe8ss0ssb" path="res://art/asteroids/large/b10005.png" id="23_5qrhw"]
+[ext_resource type="Texture2D" uid="uid://kcolsemnjsi3" path="res://art/asteroids/large/b10006.png" id="24_yck5h"]
+[ext_resource type="Texture2D" uid="uid://bmnju0eenrqeq" path="res://art/asteroids/large/b10007.png" id="25_3tnpc"]
+[ext_resource type="Texture2D" uid="uid://cgurdigt6te60" path="res://art/asteroids/large/b10008.png" id="26_4ucew"]
+[ext_resource type="Texture2D" uid="uid://cav8hr0lgwtdd" path="res://art/asteroids/large/b10009.png" id="27_h00tk"]
+[ext_resource type="Texture2D" uid="uid://bxgrx2x0sgess" path="res://art/asteroids/large/b10010.png" id="28_pqdp5"]
+[ext_resource type="Texture2D" uid="uid://cu4kuee3y07vf" path="res://art/asteroids/large/b10011.png" id="29_xbrx8"]
+[ext_resource type="Texture2D" uid="uid://clsj6ykwx6gr4" path="res://art/asteroids/large/b10012.png" id="30_v4vsm"]
+[ext_resource type="Texture2D" uid="uid://b1gyrqdt27qa1" path="res://art/asteroids/large/b10013.png" id="31_e7wfp"]
+[ext_resource type="Texture2D" uid="uid://dmtk0sc34a7wv" path="res://art/asteroids/large/b10014.png" id="32_vy6b6"]
+[ext_resource type="Texture2D" uid="uid://cpd7mixcfpduk" path="res://art/asteroids/large/b10015.png" id="33_3u5qv"]
+[ext_resource type="Texture2D" uid="uid://cdpf3uut841ei" path="res://art/asteroids/large/c10000.png" id="34_21wbw"]
+[ext_resource type="Texture2D" uid="uid://bcerl8fakwctt" path="res://art/asteroids/large/c10001.png" id="35_q4jqe"]
+[ext_resource type="Texture2D" uid="uid://bfro4ix3v61sv" path="res://art/asteroids/large/c10002.png" id="36_7sijm"]
+[ext_resource type="Texture2D" uid="uid://dyj3y514chc18" path="res://art/asteroids/large/c10003.png" id="37_35mfl"]
+[ext_resource type="Texture2D" uid="uid://c6c1djyf546b6" path="res://art/asteroids/large/c10004.png" id="38_nh8bs"]
+[ext_resource type="Texture2D" uid="uid://l7f647cmmdpk" path="res://art/asteroids/large/c10005.png" id="39_74mqo"]
+[ext_resource type="Texture2D" uid="uid://bvg2k1cnfx0k5" path="res://art/asteroids/large/c10006.png" id="40_mpgwi"]
+[ext_resource type="Texture2D" uid="uid://2yd65v88oy43" path="res://art/asteroids/large/c10007.png" id="41_1kg34"]
+[ext_resource type="Texture2D" uid="uid://yweoc06h2aqu" path="res://art/asteroids/large/c10008.png" id="42_h827s"]
+[ext_resource type="Texture2D" uid="uid://c4ytsg7dg7o8h" path="res://art/asteroids/large/c10009.png" id="43_gdmkr"]
+[ext_resource type="Texture2D" uid="uid://3v50p5e2h6rt" path="res://art/asteroids/large/c10010.png" id="44_jyl1y"]
+[ext_resource type="Texture2D" uid="uid://bp82lwnylfcay" path="res://art/asteroids/large/c10011.png" id="45_uwc0i"]
+[ext_resource type="Texture2D" uid="uid://dt07rhqptquqd" path="res://art/asteroids/large/c10012.png" id="46_3i5sm"]
+[ext_resource type="Texture2D" uid="uid://b6focs3talsvb" path="res://art/asteroids/large/c10013.png" id="47_8co6i"]
+[ext_resource type="Texture2D" uid="uid://ckl1oxph7fegj" path="res://art/asteroids/large/c10014.png" id="48_8wabq"]
+[ext_resource type="Texture2D" uid="uid://bai4fbxtl8ek1" path="res://art/asteroids/large/c10015.png" id="49_i2wi6"]
+[ext_resource type="Texture2D" uid="uid://kln4f5b05rup" path="res://art/asteroids/large/c30000.png" id="50_nabco"]
+[ext_resource type="Texture2D" uid="uid://bkxa0e7c05qnd" path="res://art/asteroids/large/c30001.png" id="51_3o46l"]
+[ext_resource type="Texture2D" uid="uid://bo884cfi5a3cm" path="res://art/asteroids/large/c30002.png" id="52_8daix"]
+[ext_resource type="Texture2D" uid="uid://colaoefts7pfs" path="res://art/asteroids/large/c30003.png" id="53_aiqoc"]
+[ext_resource type="Texture2D" uid="uid://cr1ya0obr3076" path="res://art/asteroids/large/c30004.png" id="54_8qxix"]
+[ext_resource type="Texture2D" uid="uid://ccm505hl7c4qf" path="res://art/asteroids/large/c30005.png" id="55_pwyu1"]
+[ext_resource type="Texture2D" uid="uid://cslujmv4sbyju" path="res://art/asteroids/large/c30006.png" id="56_4k33k"]
+[ext_resource type="Texture2D" uid="uid://bu3ii6s0x5dok" path="res://art/asteroids/large/c30007.png" id="57_803qy"]
+[ext_resource type="Texture2D" uid="uid://bvv2eialyu80r" path="res://art/asteroids/large/c30008.png" id="58_7a5d4"]
+[ext_resource type="Texture2D" uid="uid://duw1s24wrl04c" path="res://art/asteroids/large/c30009.png" id="59_rr3yr"]
+[ext_resource type="Texture2D" uid="uid://chvp4ow5kccox" path="res://art/asteroids/large/c30010.png" id="60_vqntb"]
+[ext_resource type="Texture2D" uid="uid://c0qecx8bsg1hb" path="res://art/asteroids/large/c30011.png" id="61_2a5xf"]
+[ext_resource type="Texture2D" uid="uid://dtrsmr4bbiarq" path="res://art/asteroids/large/c30012.png" id="62_txl24"]
+[ext_resource type="Texture2D" uid="uid://45xcd2reenrc" path="res://art/asteroids/large/c30013.png" id="63_0iylh"]
+[ext_resource type="Texture2D" uid="uid://dxcpj4oubaf36" path="res://art/asteroids/large/c30014.png" id="64_opi5d"]
+[ext_resource type="Texture2D" uid="uid://croin7wmrjope" path="res://art/asteroids/large/c30015.png" id="65_ytuad"]
+
+[sub_resource type="GDScript" id="GDScript_17ayy"]
+script/source = "extends Area2D
+
+
+var speed = 250
+
+func _process(delta):
+	position += transform.y * speed * delta
+	
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	add_to_group(\"asteroids\")
+	$AnimatedSprite2D.play()
+	var mob_types = Array($AnimatedSprite2D.sprite_frames.get_animation_names())
+	$AnimatedSprite2D.animation = mob_types.pick_random()
+
+
+func _on_visible_on_screen_enabler_2d_screen_exited():
+	queue_free()
+
+
+
+func _on_body_entered(body):
+	print(\"entered asteroired\")
+"
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f01po"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ech8t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ka65m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_xwipc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_d5668")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_4tuef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2dx4a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_785y3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_y8pi7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_4uu30")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_lsqf2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_hlnvs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_5t2ub")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_o282k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_kevyd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_b73si")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_qsw0f")
+}],
+"loop": true,
+"name": &"asteroid01",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_oxa6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_p2cv1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_1w5gn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_wvlee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_owub8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_5qrhw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_yck5h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_3tnpc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_4ucew")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_h00tk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_pqdp5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_xbrx8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_v4vsm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_e7wfp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_vy6b6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_3u5qv")
+}],
+"loop": true,
+"name": &"asteroid02",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_21wbw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_q4jqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_7sijm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_35mfl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_nh8bs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_74mqo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_mpgwi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_1kg34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_h827s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_gdmkr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_jyl1y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_uwc0i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_3i5sm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_8co6i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_8wabq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_i2wi6")
+}],
+"loop": true,
+"name": &"asteroid03",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("50_nabco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_3o46l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_8daix")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_aiqoc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_8qxix")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_pwyu1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_4k33k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_803qy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_7a5d4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_rr3yr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_vqntb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_2a5xf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_txl24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_0iylh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_opi5d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_ytuad")
+}],
+"loop": true,
+"name": &"asteroid04",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cwg6f"]
+resource_local_to_scene = true
+radius = 92.0978
+
+[node name="Asteroid" type="Area2D" groups=["asteroids"]]
+collision_mask = 0
+script = SubResource("GDScript_17ayy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_f01po")
+animation = &"asteroid04"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_cwg6f")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+position = Vector2(7.5, -6.375)
+scale = Vector2(7.55, 7.3375)
+enable_node_path = NodePath("../CollisionShape2D")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
