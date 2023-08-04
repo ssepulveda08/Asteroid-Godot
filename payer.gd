@@ -22,7 +22,6 @@ func _ready():
 	widthShip = capsuleShape.radius * 2.0
 	heightShip = capsuleShape.height + capsuleShape.radius * 2.0
 	
-	
 
 func _input(event):
 	if event is InputEventScreenTouch and event.pressed:
@@ -46,20 +45,6 @@ func _input(event):
 
 func _process(delta):
 	if moving:
-		"""var direction = (targetPosition - global_position).normalized()
-		#print("Direccion", direction)
-		var distance = (targetPosition - global_position).length()
-		#print("distance", distance)
-		
-		print("process", distance, "targetPosition", targetPosition, "global_position", global_position)
-		if distance > 1.0:
-			var movement = direction * speed * delta
-			position += movement
-			
-			position.x = clamp(position.x, 0, screen_size.x)
-			position.y = clamp(position.y, 0, screen_size.y)
-		else:
-			moving = false"""
 		var direction = (targetPosition - global_position).normalized()
 		position = position.lerp(targetPosition, speed / 1000)
 

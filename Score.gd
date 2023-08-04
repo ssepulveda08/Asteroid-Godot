@@ -22,7 +22,7 @@ func add_score(value):
 	
 func validate_update_level(score):
 	
-	if (score % 100) == 0:
+	if (score % 80) == 0:
 		emit_signal("update_level") 
 	
 func set_score_text(value):

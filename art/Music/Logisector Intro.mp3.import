@@ -12,8 +12,8 @@ dest_files=["res://.godot/imported/Logisector Intro.mp3-0a858f0d2b8cba964a09fa7d
 
 [params]
 
-loop=false
-loop_offset=0
-bpm=0
+loop=true
+loop_offset=0.0
+bpm=0.0
 beat_count=0
 bar_beats=4

@@ -21,7 +21,6 @@ window/size/viewport_width=720
 window/size/viewport_height=1500
 window/size/initial_position_type=0
 window/stretch/mode="viewport"
-window/stretch/aspect="keep_height"
 window/handheld/orientation=1
 window/macos_native_icon=""
 
